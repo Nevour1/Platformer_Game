@@ -9,6 +9,7 @@ module com.example.platformer_game {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
+    requires java.desktop;
 
     opens com.example.platformer_game to javafx.fxml;
     exports com.example.platformer_game;
