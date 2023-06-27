@@ -1,4 +1,4 @@
-package com.example.platformer_game;
+package com.rouven.platformer_game;
 
 import javax.swing.SwingUtilities;
 

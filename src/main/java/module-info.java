@@ -11,6 +11,6 @@ module com.example.platformer_game {
     requires eu.hansolo.tilesfx;
     requires java.desktop;
 
-    opens com.example.platformer_game to javafx.fxml;
-    exports com.example.platformer_game;
+    opens com.rouven.platformer_game to javafx.fxml;
+    exports com.rouven.platformer_game;
 }
