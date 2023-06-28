@@ -1,8 +1,8 @@
 package com.rouven.platformer_game;
 
-import javax.swing.*;
-import java.awt.*;
+import com.rouven.platformer_game.game.GamePanel;
 
+import javax.swing.*;
 public class MainWindow {
 
     private JFrame window;
@@ -14,12 +14,14 @@ public class MainWindow {
     public void initialize() {
         window = new JFrame();
         window.setTitle("Platformer Game");
-        window.setLayout(new BorderLayout(10, 5));
         window.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        window.setSize(800, 500);
+        window.setResizable(false);
         window.setLocationRelativeTo(null);
 
-        window.add(new JButton("NORTH"), BorderLayout.NORTH);
+        GamePanel gamePanel = new GamePanel();
+
+        window.add(gamePanel);
+        window.pack();
 
     }
 
