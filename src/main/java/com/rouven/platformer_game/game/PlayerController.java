@@ -19,6 +19,7 @@ public class PlayerController implements KeyListener {
 
         if(code == KeyEvent.VK_W) {
             upPressed = true;
+            System.out.println("LALALALAL");
         }
         if(code == KeyEvent.VK_S) {
             downPressed = true;

@@ -18,23 +18,14 @@ public class GamePanel extends JPanel  {
     final int screenWidth = tileSize * maxScreenCol;
     final int screenHeight = tileSize * maxScreenRow;
 
+    Player player = new Player();
+
 
     public GamePanel() {
 
         this.setPreferredSize(new Dimension(screenWidth, screenHeight));
         this.setBackground(Color.BLACK);
         this.setDoubleBuffered(true);
-    }
-
-    public void paintComponent (Graphics g) {
-        super.paintComponent(g);
-
-        Graphics2D g2 = (Graphics2D) g;
-
-        g2.setColor(Color.WHITE);
-        g2.fillRect(100, 100, tileSize, tileSize);
-
-        g2.dispose();
     }
 
 }
